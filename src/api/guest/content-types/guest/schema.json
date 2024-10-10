@@ -4,7 +4,8 @@
   "info": {
     "singularName": "guest",
     "pluralName": "guests",
-    "displayName": "guest"
+    "displayName": "guest",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -27,6 +28,11 @@
     "code": {
       "type": "string",
       "required": true
+    },
+    "realpass": {
+      "type": "integer",
+      "default": 0,
+      "required": false
     }
   }
 }

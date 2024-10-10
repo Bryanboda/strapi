@@ -368,6 +368,7 @@ export interface ApiGuestGuest extends Schema.CollectionType {
     singularName: 'guest';
     pluralName: 'guests';
     displayName: 'guest';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -377,6 +378,7 @@ export interface ApiGuestGuest extends Schema.CollectionType {
     status: Attribute.String & Attribute.Required;
     pass: Attribute.Integer & Attribute.Required & Attribute.DefaultTo<1>;
     code: Attribute.String & Attribute.Required;
+    realpass: Attribute.Integer & Attribute.DefaultTo<0>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
