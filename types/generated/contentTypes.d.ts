@@ -375,7 +375,9 @@ export interface ApiGuestGuest extends Schema.CollectionType {
   };
   attributes: {
     name: Attribute.String & Attribute.Required;
-    status: Attribute.String & Attribute.Required;
+    status: Attribute.String &
+      Attribute.Required &
+      Attribute.DefaultTo<'waiting'>;
     pass: Attribute.Integer & Attribute.Required & Attribute.DefaultTo<1>;
     code: Attribute.String & Attribute.Required;
     realpass: Attribute.Integer & Attribute.DefaultTo<0>;

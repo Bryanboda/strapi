@@ -18,7 +18,8 @@
     },
     "status": {
       "type": "string",
-      "required": true
+      "required": true,
+      "default": "waiting"
     },
     "pass": {
       "type": "integer",
